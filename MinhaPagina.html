@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wilson Henrique Gross - Página Pessoal</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        header, main, footer {
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: #00008B;
+            text-align: center;
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            border-radius: 10px;
+            width: 300px;
+            height: auto;
+            display: block;
+            margin: 1rem auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 100%;
+            max-width: 400px;
+            margin: 1rem auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            color: blue;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        button {
+            display: block;
+            margin: 1rem auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #message {
+            text-align: center;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        /* Ajustes para alinhamento dos títulos */
+        .aligned-title {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wilson Henrique Gross</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>Olá, meu nome é Wilson Henrique Gross, tenho 31 anos, moro em São Leopoldo-RS, sou casado, tenho uma filha de cinco meses, seis gatos e uma cachorrinha.</p>
+        </section>
+
+        <section aria-labelledby="interesses">
+            <h2 id="interesses">Meus hobbies</h2>
+            <ul>
+                <li>Assistir futebol</li>
+                <li>Fazer trilha para cachoeiras</li>
+                <li>Passear com minha família</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="imagem-cachoeira">
+            <h2 id="imagem-cachoeira" class="aligned-title">Trilha para cachoeiras</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Cachoeira_V%C3%A9u_de_Noiva_Itaitu.jpg" 
+                 alt="Cachoeira Véu de Noiva em Itaitu, rodeada por vegetação" />
+        </section>
+
+        <section aria-labelledby="tabela">
+            <h2 id="tabela" class="aligned-title">Países que gostaria de visitar</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>País</th>
+                        <th>Bandeira</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alemanha</td>
+                        <td>🇩🇪</td>
+                    </tr>
+                    <tr>
+                        <td>Uruguai</td>
+                        <td>🇺🇾</td>
+                    </tr>
+                    <tr>
+                        <td>China</td>
+                        <td>🇨🇳</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <button id="myButton">Clique para ver uma mensagem!</button>
+            <div id="message" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">
+            <a href="https://earth.google.com/web/" target="_blank">Visite o Google Earth 🌍</a>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("myButton").addEventListener("click", function () {
+            document.getElementById("message").innerHTML = "Olá! Bem-vindo à minha página pessoal!";
+        });
+    </script>
+</body>
+</html>
